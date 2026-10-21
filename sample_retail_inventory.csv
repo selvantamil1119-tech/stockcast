@@ -1,0 +1,16 @@
+sku,name,category,unitCost,unitPrice,currentStock,minStockLevel,maxStockLevel,safetyStock,leadTimeDays,supplierName
+ELEC-301,Wireless Ergonomic Silent Mouse,Electronics,450.00,999.00,50,15,150,10,5,LogiTech Prime Supplies
+ELEC-302,RGB Mechanical Gaming Keyboard,Electronics,1200.00,2499.00,35,10,100,8,7,Corsair Direct
+ELEC-303,Ultra-Fast USB-C 65W GaN Charger,Electronics,350.00,799.00,80,20,200,15,4,Anker Global Hub
+ELEC-304,1080p Full HD Dual-Mic Webcam,Electronics,850.00,1899.00,12,15,90,10,6,VisionTech Devices
+APP-401,Men Breathable Cotton Polo T-Shirt,Apparel,250.00,699.00,110,30,250,20,10,Apex Garments Ltd
+APP-402,Women High-Waist Athletic Yoga Leggings,Apparel,380.00,999.00,65,20,180,15,12,FlexFit Textiles
+APP-403,All-Weather Heavy Duty Winter Parka,Apparel,1800.00,3999.00,14,15,60,8,14,Nordic Outerwear
+GROC-501,Cold-Pressed Extra Virgin Olive Oil 1L,Groceries,320.00,650.00,90,25,200,20,5,Mediterranean Imports
+GROC-502,Artisan Dark Roast Ground Coffee 500g,Groceries,180.00,450.00,75,20,150,15,4,Highland Roasters
+GROC-503,California Organic Raw Almonds 1kg,Groceries,450.00,850.00,8,25,120,15,6,SunValley Farm Co
+GROC-504,Sparkling Flavored Natural Mineral Water 12-Pack,Groceries,140.00,320.00,140,30,300,25,3,Cascade Beverages
+HOME-601,Digital Kitchen Food Scale Precision,Home & Kitchen,280.00,699.00,40,15,100,10,5,ChefEssentials Corp
+HOME-602,Stainless Steel Thermal Coffee Tumbler 600ml,Home & Kitchen,320.00,749.00,60,15,120,10,7,HydroThermal Goods
+HLTH-701,Automated Upper Arm Blood Pressure Monitor,Healthcare,650.00,1499.00,18,12,80,8,6,MedCare Diagnostics
+HLTH-702,Daily Multivitamin Gummies with Vitamin C & Zinc,Healthcare,220.00,549.00,85,20,160,15,5,NaturePure Supplements
