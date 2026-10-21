@@ -1,7 +1,15 @@
 import React, { useState } from 'react';
 import { TrendingUp, AlertCircle, Loader2 } from 'lucide-react';
 
-const API = import.meta.env.VITE_API_URL || (window.location.hostname === 'localhost' && window.location.port === '3000' ? 'http://localhost:5001/api' : '/api');
+const getApiBase = () => {
+  const envUrl = import.meta.env.VITE_API_URL;
+  if (envUrl) {
+    return envUrl.trim().replace(/\/+$/, '');
+  }
+  return (window.location.hostname === 'localhost' && window.location.port === '3000')
+    ? 'http://localhost:5001/api'
+    : '/api';
+};
 
 export default function Login({ onLogin }) {
   const [isLogin, setIsLogin] = useState(false);
@@ -29,7 +37,9 @@ export default function Login({ onLogin }) {
     setLoading(true);
 
     try {
-      const endpoint = isLogin ? `${API}/auth/login` : `${API}/auth/register`;
+      const base = getApiBase();
+      const authPath = base.endsWith('/api') ? `${base}/auth` : `${base}/api/auth`;
+      const endpoint = isLogin ? `${authPath}/login` : `${authPath}/register`;
       const payload = isLogin
         ? { email: email.trim(), password }
         : { businessName: businessName.trim(), email: email.trim(), password };

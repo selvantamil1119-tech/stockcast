@@ -41,14 +41,27 @@ app.get('/api/health', (req, res) => {
 
 import { optionalAuth } from './middleware/auth.js';
 
-// Mount Routes
+// Mount Routes with /api prefix AND root prefix for maximum client compatibility
 app.use('/api/auth', authRoutes);
+app.use('/auth', authRoutes);
+
 app.use('/api/pos', posRoutes);
+app.use('/pos', posRoutes);
+
 app.use('/api/upload', uploadRoutes);
+app.use('/upload', uploadRoutes);
+
 app.use('/api/inventory', optionalAuth, inventoryRoutes);
+app.use('/inventory', optionalAuth, inventoryRoutes);
+
 app.use('/api/forecast', optionalAuth, forecastRoutes);
+app.use('/forecast', optionalAuth, forecastRoutes);
+
 app.use('/api/replenishment', optionalAuth, replenishmentRoutes);
+app.use('/replenishment', optionalAuth, replenishmentRoutes);
+
 app.use('/api/analytics', optionalAuth, analyticsRoutes);
+app.use('/analytics', optionalAuth, analyticsRoutes);
 
 // 404 Handler
 app.use((req, res) => {
